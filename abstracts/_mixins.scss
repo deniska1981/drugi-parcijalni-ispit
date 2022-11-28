@@ -1,0 +1,16 @@
+@mixin boxAll {
+  width: 15%;
+  position: relative;
+  right: -100vw;
+  flex-shrink: 1;
+  padding: 4%;
+  font-size: 4vw;
+  font-weight: bold;
+  text-align: center;
+  border: 4px solid white;
+  color: white;
+}
+
+@mixin animate {
+  animation: animacija 2s ease-in-out forwards;
+}

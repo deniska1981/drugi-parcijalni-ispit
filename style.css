@@ -1,0 +1,72 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background-image: url("blur-clean.jpg");
+  background-size: cover;
+  background-position: center;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+div {
+  width: 15%;
+  position: relative;
+  right: -100vw;
+  flex-shrink: 1;
+  padding: 4%;
+  font-size: 4vw;
+  font-weight: bold;
+  text-align: center;
+  border: 4px solid white;
+  color: white;
+  -webkit-animation: animacija 2s ease-in-out forwards;
+          animation: animacija 2s ease-in-out forwards;
+}
+@-webkit-keyframes animacija {
+  0% {
+    right: -100vw;
+  }
+  100% {
+    right: 0vw;
+  }
+}
+@keyframes animacija {
+  0% {
+    right: -100vw;
+  }
+  100% {
+    right: 0vw;
+  }
+}
+
+div:nth-of-type(1) {
+  background-color: rgba(44, 42, 42, 0.8);
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+div:nth-of-type(2) {
+  background: rgba(160, 2, 2, 0.4);
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+div:nth-of-type(3) {
+  background: rgba(255, 165, 0, 0.5);
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s;
+}/*# sourceMappingURL=style.css.map */
